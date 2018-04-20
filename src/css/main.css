@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* foundation */
+@import "foundation/reset";
+@import "foundation/variable";
+@import "foundation/mixins";
+@import "foundation/selector";
+
+/* layout */
+@import "layout/l-content";
+
+/* object */
+/* component */
+@import "object/component/c-footer";
+@import "object/component/c-section";
+
+/* project */
+@import "object/project/p-xxx";

@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.c-wrapper {
+}
+
+.c-section {
+
+  @mixin mq {
+
+  }
+}

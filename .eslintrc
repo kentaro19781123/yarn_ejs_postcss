@@ -1,0 +1,12 @@
+{
+  "extends": "gnavi",
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "_": true,
+    "$": true,
+    "jQuery": true,
+    "google": true,
+  }
+}

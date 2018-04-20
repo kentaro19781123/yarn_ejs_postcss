@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* media query */
+@define-mixin mq {
+  @media screen and (max-width: 769px) {
+    @mixin-content;
+  }
+}
+
+.pc-only {
+  display: inline-block;
+
+  @mixin mq {
+    display: none;
+  }
+}
+
+.sp-only {
+  display: none;
+
+  @mixin mq {
+    display: inline-block;
+  }
+}

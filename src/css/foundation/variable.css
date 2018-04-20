@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* 変数 */
+/* color */
+$CLR_WHITE: #fff;
+
+/* font-family */
+$GOTHIC: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, "メイリオ", Osaka, "MS PGothic", "ＭＳ Ｐゴシック", Helvetica, Arial, sans-serif;
+$MINCHO: "Yu Mincho","游明朝",YuMincho,"游明朝体","Hiragino Mincho ProN","HGS明朝E","メイリオ",serif;
+
+/* font-size */
+$FONT_SIZE_LLL: 3.2rem;
+$FONT_SIZE_LL: 2.4rem;
+$FONT_SIZE_ML: 2.0rem;
+$FONT_SIZE_L: 1.8rem;
+$FONT_SIZE_M: 1.6rem;
+$FONT_SIZE_S: 1.4rem;
+$FONT_SIZE_SS: 1.2rem;
+$FONT_SIZE_SSS: 1rem;
+
+/* line height */
+$LINE_HEIGHT_LL: 2.4;
+$LINE_HEIGHT_L: 2;
+$LINE_HEIGHT_M: 1.8;
+$LINE_HEIGHT_S: 1;
