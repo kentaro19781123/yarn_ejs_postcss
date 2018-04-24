@@ -16,3 +16,6 @@
 
 /* project */
 @import "object/project/p-xxx";
+
+/* utility */
+@import "object/utility/u-xxx";

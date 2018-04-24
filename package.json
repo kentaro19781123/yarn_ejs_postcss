@@ -1,12 +1,12 @@
 {
-  "name": "kyoto365",
+  "name": "yarn_ejs_postcss",
   "description": "",
   "version": "",
   "homepage": "",
   "main": "index",
   "scripts": {
     "bs": "browser-sync start -s ./dist -f ./dist",
-    "html:build": "ejs-cli -O 'src/ejs/data/cont.json' --base-dir src/ejs/html/ '/**/**.ejs' --out ./dist/",
+    "html:build": "ejs-cli -b src/ejs/html/ '/**/**.ejs' -o ./dist/ -O src/ejs/data/**.json",
     "css:lint": "stylelint './src/css/**/*.css'",
     "css:build": "postcss ./src/css/main.css -d ./dist/css --no-map -w",
     "js:lint": "eslint ./src/js",
@@ -15,8 +15,12 @@
     "copy:favicon": "cpx './src/favicon.ico' ./dist -w",
     "build-file-clean": "rimraf ./dist",
     "build": "yarn css:build & yarn html:build & yarn js:build & yarn copy & yarn copy:favicon & yarn bs",
-    "lint": "yarn css:lint && yarn js:lint",
-    "start": "yarn build-file-clean && yarn lint && yarn build && yarn bs"
+    "lint": "yarn css:lint & yarn js:lint",
+    "start": "yarn build-file-clean & yarn lint & yarn build & yarn bs",
+    "watch:html": "watch 'yarn html:build' src/ejs/",
+    "watch:js": "watch 'yarn js:build' src/js/",
+    "watch:css": "watch 'yarn css:build' src/css/",
+    "watch": "yarn watch:html & yarn watch:js & yarn watch:css & yarn bs"
   },
   "license": "ISC",
   "author": "",
@@ -51,11 +55,12 @@
     "rimraf": "^2.6.1",
     "stylelint": "^8.0.0",
     "stylelint-config-standard": "^17.0.0",
+    "watch": "^1.0.2",
     "webpack": "^3.4.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://gitlab102.gnavi.co.jp:contents-team/other-contents/kyoto365.git"
+    "url": ""
   },
   "keywords": [],
   "bugs": {}

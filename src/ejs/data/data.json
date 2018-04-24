@@ -1,0 +1,11 @@
+{
+  "title": "titleです",
+  "site_title": "siteTitle",
+  "site_url": "siteUrl",
+  "description": "Description",
+  "keywords": "Keywords",
+  "og_type": "website",
+  "og_img": "https://xxx.co.jp/xx.png",
+  "og_locale": "ja_JP",
+  "fb_app_id": "xxxxxxxxxxxxxxxxxxx"
+}
