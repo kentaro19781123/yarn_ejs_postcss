@@ -2,7 +2,7 @@
 
 ## インストール
 ```sh
-$ yarn i
+$ yarn install
 ```
 ## タスク
 ### build
