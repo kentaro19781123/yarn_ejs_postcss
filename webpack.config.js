@@ -34,7 +34,6 @@ module.exports = {
       },
     ],
   },
-
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: false,
@@ -43,5 +42,6 @@ module.exports = {
       jQuery: 'jquery',
       $: 'jquery',
     }),
-  ],
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/)
+  ]
 }

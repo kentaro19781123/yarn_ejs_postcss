@@ -60,7 +60,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:kentaro19781123/yarn_ejs_postcss.git"
   },
   "keywords": [],
   "bugs": {}
